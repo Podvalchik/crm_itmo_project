@@ -1,0 +1,42 @@
+nav {
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 17%;
+    height: 100vh;
+    background-color: #4B4A4A;
+    padding: 18px 0;
+    color: #fff;
+    z-index: 2;
+    font-size: calc(6px + 14 * (100vw / 1280));
+    .nav {
+        &__list {
+            margin-top: 55px;
+            ul {
+                a {
+                    width: 100%;
+                }
+                li {
+                    padding: 5px;
+                    margin-top: 20px;
+                    transition: all 0.3s ease;
+                    &:hover {
+                        cursor: pointer;
+                        color: #4CAF50;
+                    }
+                }
+            }
+        }
+        &__settings {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+        &__wrapper {
+            height: 100%;
+        }
+    }
+
+}
